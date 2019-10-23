@@ -1,0 +1,12 @@
+.App{
+    display: grid;
+    grid-template-columns: 334px 100vw;
+
+    grid-template-areas: "nav aside"
+}
+#grid{
+    grid-area: nav;
+}
+.xd{
+    grid-area: aside;    
+}

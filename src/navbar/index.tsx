@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Elements from '../elements'
+import '../styles/display-grid.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,7 +32,7 @@ export default function ComplexGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div id="grid" className={classes.root}>
       <Paper style={{ backgroundColor: '#1D1D1D', height: '100vh', width: '300px', position: 'absolute', left:0, borderRadius: "0px"}} className={classes.paper}>
           <Grid item sm={12} container>
             <Grid item sm container direction="column" spacing={2}>
